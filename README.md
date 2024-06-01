@@ -24,3 +24,18 @@ The following are the instructions that should consider to upload the user image
 3) There should be no blur in the image.
 
 output Images:
+
+Home Page:
+![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_43_31](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/c6bbe012-8647-4034-9211-3cc8c3172e2d)
+
+Login Page:
+![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_43_41](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/b28cc720-f52f-4ba3-815b-8276997c6c87)
+
+Register page:
+![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_43_48](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/17baee2a-c0e9-4efb-a287-9953b22d9dd2)
+
+Mask Tool:
+![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_44_12](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/60d7c4c5-84d9-47f6-924c-fcac9ce4e4d2)
+
+Face Mask website:
+![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_44_25](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/50cb47b1-eb20-477d-a35c-b87fc64e4fb3)
