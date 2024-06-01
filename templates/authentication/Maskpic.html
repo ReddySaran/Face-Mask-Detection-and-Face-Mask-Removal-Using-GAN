@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <link rel="icon" href="/static/css/Images/Mask_Detection-removebg-preview.png" type="image/icon type">
+    <link rel="stylesheet" href="static/css/Maskpic.css">
+</head>
+<body>
+    <div class="Maskpic-BG"></div>
+    <!-- Container for buttons and image at the top right corner -->
+    <div class="top-right">
+        <div>
+            <button class="top-right-button"><a href="/Login">Home</a></button>
+            <button class="top-right-button"><a href="/Mask">Face Mask Tool</a></button>
+            <button class="top-right-button"><a href="/Login">Logout</a></button>
+        </div>
+        <img src="static/css/Images/icon.png" alt="Your Image" width="40" height="40"><br>{{fullname}}   
+    </div><br><br><br>
+    <h1>Image Upload For Face Mask Detection</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="id_image">Image:</label>
+        <input type="file" id="myImage"  class="photo-upload" name="image" accept="image/*" required>
+        <br><br>
+        <input type="submit" value="Submit" class="photo-upload">
+    </form>
+
+    
+    <h2>Input Image</h2>
+    <img id="input-image" width="200" />
+    
+    <h2>Output Image</h2>
+    {% if predicted_image %}
+        <img src="{{ predicted_image.image.url }}" width="300" class="output-images-container">
+    {% endif %}
+    
+    
+    <script>
+
+        const uploadPictureButton = document.getElementById("myImage");
+        uploadPictureButton.addEventListener('change', function () {
+            displayImage(this);
+        });
+
+        function displayImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    document.getElementById('input-image').setAttribute('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+    
+

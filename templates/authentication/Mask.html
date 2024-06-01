@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection & Face Mask Removal</title>
+    <link rel="icon" href="static/css/Images/Mask_Detection-removebg-preview.png" type="image/icon type">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="Mask-BG">
+    <div class="container1">
+        {% if user.is_authenticated %}
+        <!-- Container for buttons and image at the top right corner -->
+        <div class="top-right">
+            <div>
+                <button class="top-right-button"><a href="/Login">Home</a></button>
+                <button class="top-right-button"><a href="/Mask">Face Mask Tool</a></button>
+                <button class="top-right-button"><a href="/Login">Logout</a></button>
+            </div>
+            <img src="static/css/Images/icon.png" alt="Your Image" width="40" height="40"><br>{{fullname}}   
+        </div>
+        <h1>Face Mask Tools</h1>
+        <div class="button-container">
+            <button class="detection-button"><a href="/Maskchoice" id="btn">Face Mask Detection</a></button>
+            <button class="compliance-button"><a href="/Removal" id="btn">Face Mask Removal</a></button>
+        </div>
+        <div class="login-message">Hello {{fullname}}, You've successfully logged into the Face Mask Tool Website</div>
+        {% endif %}
+    </div>
+    </div>
+</body>
+</html>

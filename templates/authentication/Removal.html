@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Uploader</title>
+    <link rel="icon" href="/static/css/Images/Mask_Detection-removebg-preview.png" type="image/icon type">
+    <link rel="stylesheet" href="static/css/Removal.css">
+</head>
+<body>
+    <div class="top-right">
+        <div>
+            <button class="top-right-button"><a href="/Login">Home</a></button>
+            <button class="top-right-button"><a href="/Mask">Face Mask Tool</a></button>
+            <button class="top-right-button"><a href="/Login">Logout</a></button>
+        </div>
+        <img src="static/css/Images/icon.png" alt="Your Image" width="40" height="40"><br>{{fullname}}   
+    </div><br><br><br>
+    <h1>Image Upload For Face Mask Removal</h1>
+    <!-- Container for buttons and image at the top right corner -->
+
+    <form method="POST" enctype="multipart/form-data" id="imageUploadForm">
+        {% csrf_token %}
+        <label for="id_image">Image:</label>
+        <input type="file" id="myImage"  class="photo-upload" name="image" accept="image/*" multiple required>
+        <br><br>
+        <input type="submit" value="Remove Mask" class="photo-upload" onclick="resetForm()">
+    </form>
+
+    
+    <h2>Input Image</h2>
+    <img id="input-image" width="200" />
+
+    <h1>Predicted Images</h1>
+    {% if predicted_image_urls %}
+        {% for image_url in predicted_image_urls %}
+            <img src="{{ image_url }}" alt="Predicted Image" class="pred">
+        {% endfor %}
+        <form action="{% url 'clear_temporary_files' %}" method="post" onsubmit="return clearTemporaryImages()">
+            {% csrf_token %}
+            {% for image_url in predicted_image_urls %}
+                <input type="hidden" id="temporary-files-input" name="temporary_files[]" value="{{ image_url }}">
+            {% endfor %}
+            <button type="submit">Clear Temporary Files</button>
+        </form>
+    {% endif %}
+
+    <script>
+        const uploadPictureButton = document.getElementById("myImage");
+        uploadPictureButton.addEventListener('change', function () {
+            displayImage(this);
+        });
+
+        function displayImage(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    document.getElementById('input-image').setAttribute('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    function clearTemporaryImages() {
+                // Select all image elements and remove them
+                var images = document.querySelectorAll('.pred');
+                images.forEach(function(image) {
+                    image.remove();
+                });
+            }
+
+
+    </script>
+</body>
+</html>
+
+
+    
+

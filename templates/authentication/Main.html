@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Mask Detection & Face Mask Removal</title>
+    <link rel="icon" href="static/css/Images/Mask_Detection-removebg-preview.png" type="image/icon type">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+    <strong>Message:</strong>{{ message }}
+    <button type="button" class="close" data-dismiss="alert" aris-label="Close">
+    <span aris-hidden="true">&times;</span>
+    </button>
+    {% endfor %}
+    <div Id="BackGround">
+    <div class="container">
+        <h1>Face Mask Detection & Face Mask Removal</h1>
+        <h3>Welcome to our Website!</h3>
+        <a href="/Login" class="btn">Login</a>
+        <a href="/Register" class="btn">Register</a>
+    </div>
+    </div>
+</body>
+</html>
