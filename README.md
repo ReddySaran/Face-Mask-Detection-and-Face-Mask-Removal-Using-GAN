@@ -37,5 +37,20 @@ Register page:
 Mask Tool:
 ![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_44_12](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/60d7c4c5-84d9-47f6-924c-fcac9ce4e4d2)
 
-Face Mask website:
+Face Mask Detection website:
 ![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_44_25](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/50cb47b1-eb20-477d-a35c-b87fc64e4fb3)
+
+Face Mask Removal Website:
+![Face Mask Detection   Face Mask Removal - Google Chrome 02-05-2024 14_44_40](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/c62574ca-442c-42a8-a23d-32ddf264f3e6)
+
+Face Mask Detection output1:
+![127 0 0 1_8000_video - Google Chrome 22-03-2024 09_45_06](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/b4b461a6-1436-4720-8972-efb80194c5fc)
+
+Face Mask Detection output2:
+![127 0 0 1_8000_video - Google Chrome 22-03-2024 09_57_16](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/18bca327-92b7-44fc-978e-c52f54c7fd56)
+
+Face Mask Removal Output1:
+![127 0 0 1_8000_video - Google Chrome 22-03-2024 10_03_13](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/a38c403a-3e21-43fc-b13f-9fec84c400ab)
+
+Face Mask Removal Output2:
+![Image Uploader - Google Chrome 02-05-2024 19_28_09](https://github.com/ReddySaran/Face-Mask-Detection-and-Face-Mask-Removal-Using-GAN/assets/116064723/4b4a01d5-11ba-4d66-ab7f-cb2c96659900)
