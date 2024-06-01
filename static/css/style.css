@@ -1,0 +1,366 @@
+/* Imports */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#BackGround{
+  background-image: url('Images/image5.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-signup-BG{
+  background-image: url('Images/login-signup.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Mask-BG{
+  background-image: url('Images/bg2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Maskchoice-BG{
+  background-image: url('Images/bg6.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top-right {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+/* Style for the top right buttons */
+.top-right-button {
+  margin-right: 10px;
+  padding:10px 20px;
+}
+
+/* .Upload-BG{
+  background-image: url('Images/Upload-BG.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.container {
+  text-align: center;
+}
+.container h1{
+  color: black;
+  font-size: 35px;
+}
+.container h3{
+  color: black;
+  font-size: 25px;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 10px;
+}
+.btn:hover {
+  background-color: #0056b3;
+}.button-container {
+    display: flex;
+    justify-content: flex-start; /* Align buttons to the left */
+    margin-top: 30px;
+}
+.button-container button {
+    padding: 10px 20px;
+    margin-right: 10px; /* Adjust margin for spacing */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-container button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+p {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6; /* Adjust line height */
+    max-width: 30%; /* Limit width for better readability */
+    margin-top: 10px;
+    align-self: flex-start; /* Align paragraph to the left */
+}
+
+/* Responsive Styling */
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+    h1 {
+        font-size: 28px; /* Decrease font size for smaller screens */
+    }
+    .button-container {
+        flex-direction: column;
+        align-items: flex-start; /* Align buttons to the left */
+    }
+    .button-container button {
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
+    p {
+        max-width: 100%; /* Adjust max width for smaller screens */
+    }
+}
+
+/* ---------------------------Login page------------------------------------ */
+
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .login-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .login-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .login-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker Blue */
+  }
+
+  .login-container input[type="submit"]:focus {
+    outline: none;
+  }
+
+  .login-container .form-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .login-container .form-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  /* Additional Styling */
+  .login-container input[type="text"]:focus,
+  .login-container input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .login-container input[type="text"]::placeholder,
+  .login-container input[type="password"]::placeholder {
+    color: #aaa;
+  }
+
+
+/* ---------------------------Register page------------------------------------ */
+
+
+  .signup-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .signup-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+
+  .signup-container input[type="text"],
+  .signup-container input[type="password"],
+  .signup-container input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .signup-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .signup-container input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker Blue */
+  }
+
+  .signup-container input[type="submit"]:focus {
+    outline: none;
+  }
+
+  .signup-container .form-footer {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .signup-container .form-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  /* Additional Styling */
+  .signup-container input[type="text"]:focus,
+  .signup-container input[type="password"]:focus,
+  .signup-container input[type="email"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .signup-container input[type="text"]::placeholder,
+  .signup-container input[type="password"]::placeholder,
+  .signup-container input[type="email"]::placeholder {
+    color: #aaa;
+  }
+
+/* ---------------------------Mask Tools page------------------------------------ */
+
+  .container1 {
+    max-width: 400px;
+    padding: 20px 80px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 50px; /* Added margin at the bottom */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: black;
+    font-size: 28px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.login-message {
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+/*------------------------------Upload Page-------------------------------------------*/
